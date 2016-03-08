@@ -1,0 +1,45 @@
+<!-- This page should be edited only by P.Tummala-->
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Site</title>
+    <script src="app/bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="server.js"></script>
+    <script src="angular-route.js"></script>
+
+    <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="less.js-2.5.3/dist/less.min.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="index.less">
+    <link rel="import" href="test.html">
+</head>
+<body>   <div ng-controller="myCtrl">
+            <h1 class="text-center">{{application}}</h1>
+            <h5 class="day datenTime">{{idx}}</h5>
+            <p>{{fullDate}}</p>
+            <button class="btn btn-primary date">{{d | date :'MMM-dd-yyyy'}}</button>
+    </div>
+<div>
+</div>
+<span class="centerText">
+    <tr class="centerText">
+        <th>Employee Name</th>
+        <th>Current Status</th>
+        <th>Major</th>
+    </tr>
+</span>
+<div>
+    <span ng-repeat="firstName in edata"></span>
+</div>
+
+<form>
+    <input type="text" name="userName" ng-model="userName">
+    <input type="password" name="passWord" ng-model="passWord">
+    <button class="btn-primary" type="submit" ng-submit="submit">Login</button>
+</form>
+<div>
+</div>
+</body>
+</html>
