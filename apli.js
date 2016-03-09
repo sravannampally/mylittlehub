@@ -1,3 +1,3 @@
-var phani;
-phani = 1+1;
-console.log(phani);
+var sravan;
+sravan = 1+1;
+console.log(sravan);
