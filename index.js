@@ -44,7 +44,7 @@ var srikanth = {
     lastName : "last",
     gender : "male"
 }
-$scope.srikanth = srikanth;
+$scope.sravan = sravan;
 });
 app.controller('nextPage',[ngRoute])
     .config('$routeProvider',function($routeProvider) {
